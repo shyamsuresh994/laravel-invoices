@@ -101,6 +101,11 @@ class InvoiceItem
     public $tax_percentage;
 
     /**
+     * @var float
+     */
+    public $making_charge_vat_percent;
+
+    /**
      * InvoiceItem constructor.
      */
     public function __construct()
@@ -266,6 +271,17 @@ class InvoiceItem
     public function subTotalPrice(float $price)
     {
         $this->sub_total_price = $price;
+
+        return $this;
+    }
+
+        /**
+     * @param float $price
+     * @return $this
+     */
+    public function makingChargeVatAmount($making_charge_vat_percent)
+    {
+        $this->making_charge_vat_percent = $making_charge_vat_percent;
 
         return $this;
     }
