@@ -1,13 +1,11 @@
 {
-    "name": "laraveldaily/laravel-invoices",
+    "name": "shyamsuresh994/laravel-invoices",
     "description": "Missing invoices for Laravel",
     "license": "GPL-3.0-only",
     "authors": [
         {
-            "name": "David Lun",
-            "email": "mysticcode@gmail.com",
-            "homepage": "https://davidlun.com",
-            "role": "Developer"
+            "name": "Shyam Suresh",
+            "email": "shyamsuresh97@gmail.com"
         }
     ],
     "homepage": "https://github.com/LaravelDaily/laravel-invoices",
