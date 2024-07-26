@@ -45,6 +45,8 @@ class Invoice
      */
     public $buyer;
 
+    public $sale;
+
     /**
      * @var Collection
      */

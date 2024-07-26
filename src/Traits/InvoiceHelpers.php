@@ -148,6 +148,16 @@ trait InvoiceHelpers
     /**
      * @return $this
      */
+    public function sale($sale)
+    {
+        $this->sale = $sale;
+
+        return $this;
+    }
+
+    /**
+     * @return $this
+     */
     public function buyer(PartyContract $buyer)
     {
         $this->buyer = $buyer;
