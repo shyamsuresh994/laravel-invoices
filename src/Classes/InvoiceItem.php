@@ -80,6 +80,12 @@ class InvoiceItem
      */
     public $sub_total_price;
 
+
+    public $sale;
+
+
+    public $purchaseItems;
+
     /**
      * @var float
      */
@@ -271,6 +277,28 @@ class InvoiceItem
     public function subTotalPrice(float $price)
     {
         $this->sub_total_price = $price;
+
+        return $this;
+    }
+
+    /**
+     * @param float $sale
+     * @return $this
+     */
+    public function sale(float $sale)
+    {
+        $this->sale = $sale;
+
+        return $this;
+    }
+
+    /**
+     * @param float $purchaseItems
+     * @return $this
+     */
+    public function purchaseItems(float $purchaseItems)
+    {
+        $this->purchaseItems = $purchaseItems;
 
         return $this;
     }
