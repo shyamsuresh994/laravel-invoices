@@ -28,6 +28,41 @@ class InvoiceItem
     /**
      * @var string
      */
+    public $purity;
+
+    /**
+     * @var string
+     */
+    public $weight;
+
+    /**
+     * @var string
+     */
+    public $makingCharge;
+
+    /**
+     * @var string
+     */
+    public $vatPercent;
+
+    /**
+     * @var string
+     */
+    public $vatAmount;
+
+    /**
+     * @var string
+     */
+    public $totalAmount;
+
+    /**
+     * @var string
+     */
+    public $grossTotal;
+
+    /**
+     * @var string
+     */
     public $units;
 
     /**
@@ -109,6 +144,84 @@ class InvoiceItem
     public function code(string $code)
     {
         $this->code = $code;
+
+        return $this;
+    }
+
+    /**
+     * @param string $purity
+     * @return $this
+     */
+    public function purity(string $purity)
+    {
+        $this->purity = $purity;
+
+        return $this;
+    }
+
+    /**
+     * @param string $weight
+     * @return $this
+     */
+    public function weight(string $weight)
+    {
+        $this->weight = $weight;
+
+        return $this;
+    }
+
+    /**
+     * @param string $makingCharge
+     * @return $this
+     */
+    public function makingCharge(string $makingCharge)
+    {
+        $this->makingCharge = $makingCharge;
+
+        return $this;
+    }
+
+    /**
+     * @param string $vatPercent
+     * @return $this
+     */
+    public function vatPercent(string $vatPercent)
+    {
+        $this->vatPercent = $vatPercent;
+
+        return $this;
+    }
+
+    
+    /**
+     * @param string $grossTotal
+     * @return $this
+     */
+    public function grossTotal(string $grossTotal)
+    {
+        $this->grossTotal = $grossTotal;
+
+        return $this;
+    }
+
+    /**
+     * @param string $vatAmount
+     * @return $this
+     */
+    public function vatAmount(string $vatAmount)
+    {
+        $this->vatAmount = $vatAmount;
+
+        return $this;
+    }
+
+    /**
+     * @param string $totalAmount
+     * @return $this
+     */
+    public function totalAmount(string $totalAmount)
+    {
+        $this->totalAmount = $totalAmount;
 
         return $this;
     }
