@@ -23,6 +23,11 @@ class InvoiceItem
     /**
      * @var string
      */
+    public $code;
+
+    /**
+     * @var string
+     */
     public $units;
 
     /**
@@ -93,6 +98,17 @@ class InvoiceItem
     public function description(string $description)
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * @param string $code
+     * @return $this
+     */
+    public function code(string $code)
+    {
+        $this->code = $code;
 
         return $this;
     }
